@@ -108,7 +108,6 @@ ul {
 }
 
 /* logo */
-.logo-link:hover,
 .logo-link:focus {
   color: var(--accent-color);
 }
@@ -151,7 +150,6 @@ ul {
 .navbar-list-items {
   margin-right: 50px;
   display: block;
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -179,8 +177,6 @@ ul {
 .navbar-feedback {
   margin-left: 50px;
   margin-right: 25px;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -270,7 +266,6 @@ ul {
 
 /* Text */
 .hero-text {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -308,7 +303,6 @@ ul {
 
 .about-section {
   margin-bottom: 10px;
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -321,7 +315,6 @@ ul {
 .about-text {
   text-align: left;
   width: 270px;
-  font-family: 'Roboto';
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -395,7 +388,6 @@ ul {
 }
 
 .section-title {
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -446,7 +438,6 @@ ul {
 
 .team-people {
   margin-bottom: 50px;
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -564,7 +555,6 @@ ul {
   padding-bottom: 60px;
 }
 
-.footer-logo:hover,
 .footer-logo:focus {
   color: var(--accent-color);
 }
@@ -583,23 +573,37 @@ ul {
 .footer-nav {
   padding-top: 20px;
 }
-
+.ardess-position:hover,
+.ardess-position:focus {
+  color: var(--accent-color);
+}
 .ardess-position {
-  font-family: 'Roboto';
+  transition: color 250ms var(--cubic);
   font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #ffffff;
+  -webkit-transition: color 250ms var(--cubic);
+  -moz-transition: color 250ms var(--cubic);
+  -ms-transition: color 250ms var(--cubic);
+  -o-transition: color 250ms var(--cubic);
 }
-
+.footer-feedback:hover,
+.footer-feedback:focus {
+  color: var(--accent-color);
+}
 .footer-feedback {
-  font-family: 'Roboto';
   font-style: normal;
+  transition: color 250ms var(--cubic);
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 250ms var(--cubic);
+  -moz-transition: color 250ms var(--cubic);
+  -ms-transition: color 250ms var(--cubic);
+  -o-transition: color 250ms var(--cubic);
 }
 
 .adress-list {
@@ -886,11 +890,15 @@ ul {
   height: 30px;
   cursor: pointer;
 }
-
-.close:hover,
-.close:focus {
+.modal-btn:hover .close,
+.modal-btn:focus .close {
   fill: var(--accent-color);
 }
+
+/* .close:hover,
+.close:focus {
+  fill: var(--accent-color);
+} */
 .close {
   transition: fill 250ms var(--cubic);
   width: 11px;
